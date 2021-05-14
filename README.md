@@ -8,3 +8,11 @@
 <h3>Мелочи</h3>
 
     CModule::IncludeModule("iblock");
+
+<h1>Работа с разделами</h1>
+Путь от корня разделов до текущего раздела:
+
+    $rs = CIBlockSection::GetNavChain(1, $ar['IBLOCK_SECTION_ID']);
+    if ($ar = $rs->GetNext()) {
+        p($ar, false);
+    }
