@@ -16,3 +16,7 @@
     if ($ar = $rs->GetNext()) {
         p($ar, false);
     }
+
+<h3>Подключаем ядро</h3>
+
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/bitrix/modules/main/include/prolog_before.php");
